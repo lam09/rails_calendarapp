@@ -1,3 +1,25 @@
 <div class="row">
   <h1 class="title text-center">INDEX PAGE</h1>
 </div>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12 text-center">
+      <h1 class="title">Calendar  APP</h1>
+    </div>
+    <div class="col-lg-12 form-group">
+      <label for="">Welcome</label>
+      <%= link_to event.name, user_path(current_user) %>
+    </div>
+    <div class="col-lg-12 form-group">
+      <label for="">List Participants</label>
+      <table class="table">
+        <thead>
+        <th>User Name</th>
+        </thead>
+        <tbody>
+        <%= render event.participant %>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

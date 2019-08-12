@@ -9,7 +9,7 @@ default: &default
   encoding: unicode
   pool: 5
   username: postgres
-  password: root
+  password: JetLi22
 development:
   <<: *default
   database: calendar_dev
